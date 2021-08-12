@@ -26,6 +26,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
+  --bs-pink: #E31277;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
@@ -3661,6 +3662,47 @@ fieldset:disabled .btn {
   border-color: #212529;
 }
 
+.btn-pink {
+  color: #fff;
+  background-color: #E31277;
+  border-color: #E31277;
+}
+
+.btn-pink:hover {
+  color: #fff;
+  background-color: #c10f65;
+  border-color: #b60e5f;
+}
+
+.btn-check:focus + .btn-pink, .btn-pink:focus {
+  color: #fff;
+  background-color: #c10f65;
+  border-color: #b60e5f;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(231, 54, 139, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(231, 54, 139, 0.5);
+}
+
+.btn-check:checked + .btn-pink,
+.btn-check:active + .btn-pink, .btn-pink:active, .btn-pink.active,
+.show > .btn-pink.dropdown-toggle {
+  color: #fff;
+  background-color: #b60e5f;
+  border-color: #aa0e59;
+}
+
+.btn-check:checked + .btn-pink:focus,
+.btn-check:active + .btn-pink:focus, .btn-pink:active:focus, .btn-pink.active:focus,
+.show > .btn-pink.dropdown-toggle:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(231, 54, 139, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(231, 54, 139, 0.5);
+}
+
+.btn-pink:disabled, .btn-pink.disabled {
+  color: #fff;
+  background-color: #E31277;
+  border-color: #E31277;
+}
+
 .btn-outline-primary {
   color: #630834;
   border-color: #630834;
@@ -3930,6 +3972,40 @@ fieldset:disabled .btn {
 
 .btn-outline-dark:disabled, .btn-outline-dark.disabled {
   color: #212529;
+  background-color: transparent;
+}
+
+.btn-outline-pink {
+  color: #E31277;
+  border-color: #E31277;
+}
+
+.btn-outline-pink:hover {
+  color: #fff;
+  background-color: #E31277;
+  border-color: #E31277;
+}
+
+.btn-check:focus + .btn-outline-pink, .btn-outline-pink:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(227, 18, 119, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(227, 18, 119, 0.5);
+}
+
+.btn-check:checked + .btn-outline-pink,
+.btn-check:active + .btn-outline-pink, .btn-outline-pink:active, .btn-outline-pink.active, .btn-outline-pink.dropdown-toggle.show {
+  color: #fff;
+  background-color: #E31277;
+  border-color: #E31277;
+}
+
+.btn-check:checked + .btn-outline-pink:focus,
+.btn-check:active + .btn-outline-pink:focus, .btn-outline-pink:active:focus, .btn-outline-pink.active:focus, .btn-outline-pink.dropdown-toggle.show:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(227, 18, 119, 0.5);
+          box-shadow: 0 0 0 0.25rem rgba(227, 18, 119, 0.5);
+}
+
+.btn-outline-pink:disabled, .btn-outline-pink.disabled {
+  color: #E31277;
   background-color: transparent;
 }
 
@@ -5596,6 +5672,16 @@ fieldset:disabled .btn {
   color: #101214;
 }
 
+.alert-pink {
+  color: #880b47;
+  background-color: #f9d0e4;
+  border-color: #f7b8d6;
+}
+
+.alert-pink .alert-link {
+  color: #6d0939;
+}
+
 @-webkit-keyframes progress-bar-stripes {
   0% {
     background-position-x: 1rem;
@@ -6057,6 +6143,22 @@ fieldset:disabled .btn {
   color: #fff;
   background-color: #141619;
   border-color: #141619;
+}
+
+.list-group-item-pink {
+  color: #880b47;
+  background-color: #f9d0e4;
+}
+
+.list-group-item-pink.list-group-item-action:hover, .list-group-item-pink.list-group-item-action:focus {
+  color: #880b47;
+  background-color: #e0bbcd;
+}
+
+.list-group-item-pink.list-group-item-action.active {
+  color: #fff;
+  background-color: #880b47;
+  border-color: #880b47;
 }
 
 .btn-close {
@@ -7274,6 +7376,14 @@ fieldset:disabled .btn {
   color: #1a1e21;
 }
 
+.link-pink {
+  color: #E31277;
+}
+
+.link-pink:hover, .link-pink:focus {
+  color: #b60e5f;
+}
+
 .ratio {
   position: relative;
   width: 100%;
@@ -7680,6 +7790,10 @@ fieldset:disabled .btn {
 
 .border-dark {
   border-color: #212529 !important;
+}
+
+.border-pink {
+  border-color: #E31277 !important;
 }
 
 .border-white {
@@ -8711,6 +8825,10 @@ fieldset:disabled .btn {
   color: #212529 !important;
 }
 
+.text-pink {
+  color: #E31277 !important;
+}
+
 .text-white {
   color: #fff !important;
 }
@@ -8765,6 +8883,10 @@ fieldset:disabled .btn {
 
 .bg-dark {
   background-color: #212529 !important;
+}
+
+.bg-pink {
+  background-color: #E31277 !important;
 }
 
 .bg-body {
@@ -12300,8 +12422,12 @@ h1, .h1 {
   line-height: 24px;
 }
 
+.fz-20 {
+  font-size: 20px;
+}
+
 .banner {
-  height: 720px;
+  height: 480px;
   background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-UrOZTfXT0h0-unsplash%20(1).jpg");
   background-size: cover;
   background-repeat: no-repeat;
