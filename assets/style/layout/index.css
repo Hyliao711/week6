@@ -6,4 +6,42 @@
   background-position: center;
 }
 
+.menulist {
+  padding: 14px;
+  padding-left: 275px;
+  padding-right: 275px;
+}
+
+.menulist li {
+  width: 65px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menulist li a {
+  color: #707070;
+}
+
+.menulist li::before {
+  content: "";
+  width: 0%;
+  height: 1px;
+  background-color: #E31277;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  -webkit-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+}
+
+.menulist li:hover::before {
+  width: 100%;
+}
+
 /*# sourceMappingURL=index.css.map */
