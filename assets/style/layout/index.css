@@ -1,3 +1,8 @@
+.sign-menu {
+  position: absolute;
+  right: 24px;
+}
+
 .banner {
   height: 480px;
   background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/ricardo-gomez-angel-UrOZTfXT0h0-unsplash%20(1).jpg");
@@ -6,41 +11,51 @@
   background-position: center;
 }
 
-.menulist {
-  padding: 14px;
-  padding-left: 275px;
-  padding-right: 275px;
+.foot-banner {
+  height: 400px;
+  background-image: url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/wladislaw-peljuchno-Y_f1aHpR1tc-unsplash.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.menulist li {
-  width: 65px;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.nav-scroller {
+  height: 2.75rem;
+  overflow: hidden;
+  border-bottom: 1px solid #707070;
 }
 
-.menulist li a {
+.nav-scroller .nav {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.nav-link {
   color: #707070;
+  position: relative;
 }
 
-.menulist li::before {
+.nav-link::before {
   content: "";
   width: 0%;
   height: 1px;
   background-color: #E31277;
   position: absolute;
-  top: 100%;
+  top: 80%;
   left: 0;
   -webkit-transition: width 0.3s ease-in-out;
   -o-transition: width 0.3s ease-in-out;
   transition: width 0.3s ease-in-out;
 }
 
-.menulist li:hover::before {
+.nav-link:hover {
+  color: #E31277;
+}
+
+.nav-link:hover::before {
   width: 100%;
 }
 
