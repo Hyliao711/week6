@@ -1,11 +1,19 @@
 .fs-20 {
     font-size: 20px;
 }
+.lh-30 {
+    line-height: 30px;
+}
 .lh-3 {
     line-height: 3rem;
 }
 .bg-lightgray {
     background-color: #EFEFEF;
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 15px;   
+}
+.ml-15 {
+    @include media-breakpoint-up(md) {
+        margin-left: -15px;
+    }
 }
