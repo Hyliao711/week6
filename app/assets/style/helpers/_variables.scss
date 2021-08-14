@@ -89,7 +89,7 @@ $theme-colors: (
   "dark":       $dark,
   "pink":       #E31277,
   "gray70":     #707070,
-  "purple":     #190014CC,
+  "purple":     #190014CC
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -260,6 +260,9 @@ $spacers: (
   5: $spacer * 3,
   6: $spacer * 1.75,
   7: $spacer * 5,
+  8: $spacer * 2.25,
+  9: $spacer * 1.25,
+  10: $spacer * 3.75,
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -481,7 +484,8 @@ $display-font-sizes: (
   3: 4rem,
   4: 3.5rem,
   5: 3rem,
-  6: 2.5rem
+  6: 2.5rem,
+  7: 2rem,
 ) !default;
 
 $display-font-weight: 300 !default;

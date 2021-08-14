@@ -21,48 +21,70 @@
 
 <body>
   <header>
-    <div class="container pt-6 pb-6">
-      <div class="row justify-content-end align-items-center">
-        <h1 class="col-md-8 text-primary text-center">EXHIBINECTION</h1>
-        <ul class="col-md-2 d-flex justify-content-between align-items-center list-unstyled">
-          <li><a href="#" class="text-dark">Sign in</a></li>
-          <li><a href="#" class="text-dark">Sign up</a></li>
-          <li><a href="#" class="text-dark"><span class="material-icons">
-                confirmation_number
-              </span></a></li>
-        </ul>
-      </div>
+    <div class="container d-flex justify-content-center pt-6 pb-6 position-relative">
+      <h1 class="text-primary text-center">EXHIBINECTION</h1>
+      <ul class="sign-menu d-flex justify-content-between align-items-center list-unstyled">
+        <li><a href="#" class="text-dark d-none d-md-block">Sign in</a></li>
+        <li><a href="#" class="text-dark d-none d-md-block">Sign up</a></li>
+        <li><a href="#" class="text-dark"><span class="material-icons">
+              confirmation_number
+            </span></a></li>
+      </ul>
     </div>
-    <div class="row">
-      <div class="banner col-md-12 d-flex align-items-center">
-        <div class="container d-flex flex-column">
-          <h2 class="text-white fw-bold fz-2 mb-2">台北當代藝術展</h2>
-          <p class="text-white fw-bold fz-20 mb-3">01 JUN - 31 OCT</p>
-          <div class="d-flex">
-            <button type="button" class="btn btn-pink me-2 ps-5 pe-5">購買票劵</button>
-            <button type="button" class="btn btn-outline-light ps-5 pe-5">詳細資訊</button>
-          </div>
+    <div class="banner w-100 d-flex align-items-md-center align-items-end">
+      <div class="container d-flex flex-column mb-7 mb-md-0">
+        <h2 class="text-white fw-bold fs-2 mb-2">台北當代藝術展</h2>
+        <p class="text-white fw-bold fs-20 mb-3">01 JUN - 31 OCT</p>
+        <div class="d-flex">
+          <button type="button" class="btn btn-pink me-3 me-md-2 ps-5 pe-5">購買票劵</button>
+          <button type="button" class="btn btn-outline-light ps-5 pe-5">詳細資訊</button>
         </div>
       </div>
     </div>
-    <div class="row border border-gray70 d-flex justify-content-around align-items-center">
-      <ul class="menulist col-md-8 d-flex justify-content-around align-items-center list-unstyled">
-        <li><a href="#">音樂</a></li>
-        <li><a href="#">戲劇</a></li>
-        <li><a href="#">設計</a></li>
-        <li><a href="#">藝術</a></li>
-        <li><a href="#">美食</a></li>
-        <li><a href="#">旅遊</a></li>
-        <li><a href="#">電影</a></li>
-        <li><a href="#">親子</a></li>
-        <li><a href="#">期間限定</a></li>
-      </ul>
+    <div class="nav-scroller mb-9 mb-md-10">
+      <nav class="container nav justify-content-md-center" aria-label="Secondary navigation">
+        <a class="nav-link active" aria-current="page" href="#">音樂</a>
+        <a class="nav-link" href="#">戲劇</a>
+        <a class="nav-link" href="#">設計</a>
+        <a class="nav-link" href="#">藝術</a>
+        <a class="nav-link" href="#">美食</a>
+        <a class="nav-link" href="#">旅遊</a>
+        <a class="nav-link" href="#">電影</a>
+        <a class="nav-link" href="#">親子</a>
+        <a class="nav-link" href="#">期間限定</a>
+      </nav>
     </div>
   </header>
 
   <%- contents %>
 
     <footer class="footer">
+      <div class="foot-banner d-flex align-items-end pb-8">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4 text-white">
+              <h2>想收到最新消息嗎？ 快訂閱我們！</h2>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-label="Recipient's username"
+                  aria-describedby="button-addon2">
+                <button class="btn btn-pink" type="button" id="button-addon2">訂閱</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <div class="d-flex">
+            <h4>EXHIBINECTION</h4>
+            <p>© 2020. All Rights Reserved.</p>
+          </div>
+          <ul class="d-flex list-unstyled">
+            <li><a href="#" class="text-dark">Sign in</a></li>
+            <li><a href="#" class="text-dark">Sign up</a></li>
+          </ul>
+        </div>
+      </div>
     </footer>
 
     <script src="./assets/js/vendors.js"></script>
