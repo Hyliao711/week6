@@ -15,6 +15,7 @@
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
@@ -144,51 +145,97 @@
         </div>
     </div>
     <h2 class="fw-bold fs-7 lh-3 ml-15 mb-2 mb-md-4">直播回顧</h2>
-    <div class="row banner__2">
-        <div class="col-md-5 bg-purple text-white">
-            <div class="d-flex">
-                <h4>開幕對談</h4>
-                <h4>藝術展演巡禮</h4>
+    <div class="row banner__2 pe-0 ps-0 mb-md-9">
+        <div class="col-md-5 bg-purple text-white pt-11 pb-11">
+            <div class="d-flex mb-12">
+                <h4 class="fs-28 fw-bold border-end border-light pe-13">開幕對談</h4>
+                <h4 class="fs-28 fw-bold ps-13">藝術展演巡禮</h4>
             </div>
-            <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/people.png"
+            <img class="mb-13" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/people.png"
                 alt="">
-            <p>臺北現代聯合總監｜Ken Hsu</p>
-            <p>獨家由藝術家、策展人、畫廊總監帶您欣賞台北藝術特展，感受雕塑、展演及當代日常文化之間微妙的關係。</p>
-            <button type="button" class="btn btn-pink me-2 ps-5 pe-5">購買票劵</button>
+            <p class="mb-2 fs-20">臺北現代聯合總監｜Ken Hsu</p>
+            <p class="mb-3">獨家由藝術家、策展人、畫廊總監帶您欣賞台北藝術特展，感受雕塑、展演及當代日常文化之間微妙的關係。</p>
+            <button type="button" class="foot-btn-1 btn btn-pink me-2 ps-5 pe-5">點此觀看</button>
         </div>
         <div class="col-md-7"></div>
+    </div>
+    <h2 class="fw-bold fs-7 lh-3 ml-15 mb-2 mb-md-4">猜你也喜歡...</h2>
+    <div class="row pe-sm-0 ps-sm-0 mb-md-10">
+        <div class="col-12 col-md-11 offset-md-1 pe-0 ps-0">
+            <div class="swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="card border-0">
+                        <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg?raw=true" class="card-img-top mb-1" alt="...">
+                        <div class="card-body p-0">
+                          <h5 class="card-title fw-bold">No.22 線上設計展</h5>
+                          <p class="card-text h5 mb-1">$350</p>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card border-0">
+                        <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg?raw=true" class="card-img-top mb-1" alt="...">
+                        <div class="card-body p-0">
+                          <h5 class="card-title fw-bold">No.22 線上設計展</h5>
+                          <p class="card-text h5 mb-1">$350</p>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card border-0">
+                        <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg?raw=true" class="card-img-top mb-1" alt="...">
+                        <div class="card-body p-0">
+                          <h5 class="card-title fw-bold">No.22 線上設計展</h5>
+                          <p class="card-text h5 mb-1">$350</p>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="card border-0">
+                        <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/exhibition-week6/ricardo-gomez-angel-WxpnuLzqZN4-unsplash.jpg?raw=true" class="card-img-top mb-1" alt="...">
+                        <div class="card-body p-0">
+                          <h5 class="card-title fw-bold">No.22 線上設計展</h5>
+                          <p class="card-text h5 mb-1">$350</p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
     </div>
 </div>
 
     <footer class="footer">
       <div class="foot-banner d-flex align-items-end pb-8">
         <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-4 text-white">
-              <h2>想收到最新消息嗎？ 快訂閱我們！</h2>
+          <div class="row pe-0 ps-0">
+            <div class="col-12 col-lg-4 text-white">
+              <h2 class="mb-13">想收到最新消息嗎？<br>快訂閱我們！</h2>
               <div class="input-group mb-3">
                 <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-label="Recipient's username"
                   aria-describedby="button-addon2">
-                <button class="btn btn-pink" type="button" id="button-addon2">訂閱</button>
+                <button class="foot-btn-2 btn btn-pink" type="button" id="button-addon2">訂閱</button>
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="container">
-        <div class="d-flex justify-content-between">
-          <div class="d-flex">
-            <h4>EXHIBINECTION</h4>
-            <p>© 2020. All Rights Reserved.</p>
+        <div class="d-flex justify-content-between pt-3 pb-3 pt-md-6 pb-md-6">
+          <div class="d-flex flex-column flex-md-row align-items-md-center">
+            <h4 class="pe-md-3">EXHIBINECTION</h4>
+            <p class="mb-0">© 2020. All Rights Reserved.</p>
           </div>
-          <ul class="d-flex list-unstyled">
+          <ul class="d-none d-md-flex list-unstyled ">
             <li><a href="#" class="text-dark">Sign in</a></li>
-            <li><a href="#" class="text-dark">Sign up</a></li>
+            <li><a href="#" class="text-dark ps-md-4">Sign up</a></li>
           </ul>
         </div>
       </div>
     </footer>
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
 </body>
