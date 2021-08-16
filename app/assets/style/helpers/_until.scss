@@ -1,6 +1,9 @@
 .fs-20 {
     font-size: 20px;
 }
+.fs-28 {
+    font-size: 28px;
+}
 .lh-30 {
     line-height: 30px;
 }
@@ -16,4 +19,16 @@
     @include media-breakpoint-up(md) {
         margin-left: -15px;
     }
+}
+.foot-btn-1 {
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.foot-btn-2 {
+    padding-left: 52px;
+    padding-right: 52px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
