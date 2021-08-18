@@ -1,6 +1,18 @@
 .sign-menu {
   position: absolute;
   right: 24px;
+  li a:hover {
+    opacity: 0.7;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .position-lg-absolute {
+    position: absolute;
+  }
+  .translate-lg-middle {
+    transform: translate(-50%, -50%);
+  }
 }
 
 .banner {
@@ -26,8 +38,12 @@
 .nav-scroller .nav {
   flex-wrap: nowrap;
   padding-bottom: 1rem;
+  justify-content: center;
   overflow-x: auto;
   white-space: nowrap;
+  @include media-breakpoint-down(md) {
+    justify-content: flex-start;
+  }
 }
 .nav-link {
   color: #707070;
