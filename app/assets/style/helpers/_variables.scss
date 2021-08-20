@@ -256,16 +256,18 @@ $spacers: (
   1: $spacer * .25,
   2: $spacer * .5,
   3: $spacer,
-  4: $spacer * 1.5, 
+  4: $spacer * 1.5,/* 24 */ 
   5: $spacer * 3,
-  6: $spacer * 1.75,  
+  6: $spacer * 1.75,/* 28 */  
   7: $spacer * 5,
   8: $spacer * 2.25,
-  9: $spacer * 1.25,
-  10: $spacer * 3.75,
+  9: $spacer * 1.25,/* 20 */
+  10: $spacer * 3.75,/* 60 */
   11: $spacer * 2.5,
   12: $spacer * 2,
   13: $spacer * 0.75,
+  14: $spacer * 2.75,/* 44 */
+  15: $spacer * 1.875,/* 30 */
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;
@@ -354,7 +356,7 @@ $container-max-widths: (
 // Set the number of columns and specify the width of the gutters.
 
 $grid-columns:                12 !default;
-$grid-gutter-width:           1.5rem !default;
+$grid-gutter-width:           1.875rem !default;
 $grid-row-columns:            6 !default;
 
 $gutters: $spacers !default;
@@ -458,6 +460,7 @@ $h3-font-size:                $font-size-base * 1.75 !default;
 $h4-font-size:                $font-size-base * 1.5 !default;
 $h5-font-size:                $font-size-base * 1.25 !default;
 $h6-font-size:                $font-size-base !default;
+$h7-font-size:                $font-size-base * 2.5;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -467,7 +470,8 @@ $font-sizes: (
   3: $h3-font-size,
   4: $h4-font-size,
   5: $h5-font-size,
-  6: $h6-font-size
+  6: $h6-font-size,
+  7: $h7-font-size,
 ) !default;
 // scss-docs-end font-sizes
 

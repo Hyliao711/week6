@@ -20,6 +20,13 @@
         background-size: cover;
         background-repeat: no-repeat;
     }
+    &01 {
+        height: 256px;
+        background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/alina-grubnyak-R84Oy89aNKs-unsplash.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
 .banner__2 {
     background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/exhibition-week6/people2.png');
@@ -74,4 +81,7 @@
     }
 }
 
-  
+.banner__2 .bg-purple {
+    padding-right: 15px;
+    padding-left: 15px;
+}

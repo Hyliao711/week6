@@ -4,6 +4,25 @@
 .fs-28 {
     font-size: 28px;
 }
+@include media-breakpoint-up(md) {
+    .fs-topic {
+        font-size: 36px!important;
+    }
+}
+.border-start-none {
+    border-left: 1px solid #000;
+}
+@include media-breakpoint-down(lg) {
+    .border-start-none {
+        border-left: 0px solid #000;
+    }
+}
+@include media-breakpoint-down(md) {
+    .pse-15 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
 .lh-30 {
     line-height: 30px;
 }
@@ -20,6 +39,7 @@
         margin-left: -15px;
     }
 }
+
 .foot-btn-1 {
     padding-left: 38px;
     padding-right: 38px;
@@ -31,4 +51,52 @@
     padding-right: 52px;
     padding-top: 12px;
     padding-bottom: 12px;
+}
+
+.product-box {
+    height: 16rem;
+}
+
+.ticket-box {
+    height: 16rem;
+}
+@include media-breakpoint-down(md) {
+    .ticket-box {
+        height: 8rem;
+    }
+}
+
+.img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.img-box01 {
+    height: 25rem;
+    @include media-breakpoint-up(md) {
+        width: 100%;
+    }
+}
+
+.img-box02 {
+    height: 35rem;
+    @include media-breakpoint-up(md) {
+        width: 100%;
+    }
+}
+
+.img-box03 {
+    height: 7.5rem;
+    width: 7.5rem;
+    @include media-breakpoint-up(md) {
+        width: 100%;
+    }
+}
+
+.card-body {
+    height: 7.5rem;
+}
+
+.offcanvas-end {
+    width: 540px;
 }
