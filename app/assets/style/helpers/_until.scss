@@ -39,6 +39,14 @@
         margin-left: -15px;
     }
 }
+.mse-15 {
+    margin-right: -15px;
+    margin-left: -15px;
+    @include media-breakpoint-up(md) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
 
 .foot-btn-1 {
     padding-left: 38px;
@@ -99,4 +107,47 @@
 
 .offcanvas-end {
     width: 540px;
+}
+
+.timeline-section {
+    position: relative;
+    font-size: 14px;
+}
+
+.timeline-section::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: #e31277;
+}
+
+.timeline-pointer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+  
+.timeline-pointer::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    transform: translate(-50%, -30%);
+    border: 1px solid #E31277;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.pointer-check::before {
+    content: "";
+    background-color: #e31277;
+}
+
+.fs-icon {
+    font-size: 50px;
 }
